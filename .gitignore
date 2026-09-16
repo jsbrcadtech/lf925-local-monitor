@@ -1,0 +1,57 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*credential*
+*token*
+*license_key*
+*LICENSE_KEY*
+
+# Vendor / proprietary artifacts
+*.apk
+*.aab
+*.so
+*.bin
+
+# Captures and generated research output
+*.pcap
+*.pcapng
+*.log
+.worker/
+research_sendioctrl_callsites.txt
+qwen-worker.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Native build output
+bridge_api/native/test_vtech_control_runtime
+bridge_api/native/*.o
+
+# Local tooling / editor state
+.aider*
+.vscode/
+.idea/
+*.bak
+*.tmp
+
+# Android / Gradle leftovers
+.gradle/
+**/build/
+local.properties
+
+# Local go2rtc checkouts / runtime state
+go2rtc/
+/run/vtech/
+*.sock
+*.state.json
+
+# Archives
+*.tar.gz
+*.zip
