@@ -119,6 +119,8 @@ The API intentionally exposes semantic commands only. There is no arbitrary IOCt
 
 ## Licensing and affiliation
 
-No project-wide open-source license has been selected yet. The go2rtc patch is derived from an MIT-licensed upstream project; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Project-authored code and documentation are licensed under the [MIT License](LICENSE). This is intentionally permissive so other owners and developers can use, modify, fork, and redistribute the local integration.
+
+That license does **not** grant rights to proprietary VTech/LeapFrog, TUTK/ThroughTek, or other third-party software, firmware, SDKs, binaries, credentials, or trademarks. The go2rtc-derived patch remains subject to its upstream MIT licensing and attribution; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 This is an unofficial interoperability project and is not affiliated with or endorsed by VTech, LeapFrog, ThroughTek, or TUTK. Product and company names are used only to identify compatible systems.
