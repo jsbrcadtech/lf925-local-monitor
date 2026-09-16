@@ -1,5 +1,7 @@
 # Third-party notices
 
+The repository-level MIT License applies to project-authored code and documentation. It does not replace, supersede, or grant rights under licenses for third-party or proprietary components.
+
 ## go2rtc
 
 The file `patches/go2rtc-cam2-producer-race.patch` is a small patch against the open-source [go2rtc](https://github.com/AlexxIT/go2rtc) project.
@@ -10,4 +12,4 @@ go2rtc is distributed under the MIT License. Copyright (c) 2022 Alexey Khit and 
 
 ## Proprietary components not distributed
 
-VTech/LeapFrog application binaries, TUTK/ThroughTek SDK/runtime libraries, device credentials and pairing/authentication material are not included in this repository.
+VTech/LeapFrog application binaries, TUTK/ThroughTek SDK/runtime libraries, device credentials and pairing/authentication material are not included in this repository and are not covered by this repository's MIT License.
