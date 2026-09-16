@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python syntax
+        run: python -m py_compile bridge_api/vtech_api.py bridge_api/test_vtech_api.py kiosk/vtech_kiosk_v3.py tools/research/*.py
+      - name: Python unit tests
+        run: PYTHONPATH=bridge_api python -m unittest bridge_api/test_vtech_api.py
+      - name: Native runtime compile and tests
+        run: |
+          cc -std=c11 -Wall -Wextra -Wno-unused-function -pthread \
+            -Ibridge_api/native bridge_api/native/test_vtech_control_runtime.c \
+            -o /tmp/test_vtech_runtime
+          /tmp/test_vtech_runtime
